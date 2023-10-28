@@ -61,7 +61,7 @@
 
             <div class="col">
                 <div class="card">
-                    <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
+                    <img src="imagen2.jpg" class="card-img-top" alt="Imagen 3">
                     <div class="card-body">
                         <h5 class="card-title">Título 3</h5>
                         <p class="card-text">Texto de ejemplo para la cuadrícula.</p>
@@ -91,7 +91,7 @@
                 <div class="card">
                     <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
                     <div class="card-body">
-                        <h5 class="card-title">Título 2</h5>
+                        <h5 class="card-title">Título 5</h5>
                         <p class="card-text">Texto de ejemplo para la cuadrícula.</p>
                         <a href="#" class="btn btn-primary">Botón 2</a>
                     </div>
@@ -102,7 +102,7 @@
                 <div class="card">
                     <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
                     <div class="card-body">
-                        <h5 class="card-title">Título 2</h5>
+                        <h5 class="card-title">Título 6</h5>
                         <p class="card-text">Texto de ejemplo para la cuadrícula.</p>
                         <a href="#" class="btn btn-primary">Botón 2</a>
                     </div>
@@ -118,7 +118,7 @@
                 <div class="card">
                     <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
                     <div class="card-body">
-                        <h5 class="card-title">Título 2</h5>
+                        <h5 class="card-title">Título 7</h5>
                         <p class="card-text">Texto de ejemplo para la cuadrícula.</p>
                         <a href="#" class="btn btn-primary">Botón 2</a>
                     </div>
@@ -129,7 +129,7 @@
                 <div class="card">
                     <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
                     <div class="card-body">
-                        <h5 class="card-title">Título 2</h5>
+                        <h5 class="card-title">Título 8</h5>
                         <p class="card-text">Texto de ejemplo para la cuadrícula.</p>
                         <a href="#" class="btn btn-primary">Botón 2</a>
                     </div>
@@ -140,7 +140,7 @@
                 <div class="card">
                     <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
                     <div class="card-body">
-                        <h5 class="card-title">Título 2</h5>
+                        <h5 class="card-title">Título 9</h5>
                         <p class="card-text">Texto de ejemplo para la cuadrícula.</p>
                         <a href="#" class="btn btn-primary">Botón 2</a>
                     </div>
@@ -155,7 +155,7 @@
                 <div class="card">
                     <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
                     <div class="card-body">
-                        <h5 class="card-title">Título 2</h5>
+                        <h5 class="card-title">Título 10</h5>
                         <p class="card-text">Texto de ejemplo para la cuadrícula.</p>
                         <a href="#" class="btn btn-primary">Botón 2</a>
                     </div>
@@ -166,7 +166,7 @@
                 <div class="card">
                     <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
                     <div class="card-body">
-                        <h5 class="card-title">Título 2</h5>
+                        <h5 class="card-title">Título 11</h5>
                         <p class="card-text">Texto de ejemplo para la cuadrícula.</p>
                         <a href="#" class="btn btn-primary">Botón 2</a>
                     </div>
@@ -177,7 +177,7 @@
                 <div class="card">
                     <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
                     <div class="card-body">
-                        <h5 class="card-title">Título 2</h5>
+                        <h5 class="card-title">Título 12</h5>
                         <p class="card-text">Texto de ejemplo para la cuadrícula.</p>
                         <a href="#" class="btn btn-primary">Botón 2</a>
                     </div>
