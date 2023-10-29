@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <title>Bootstrap Example</title>
+    <title>MI WEB DE VOTACIONES</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body class="p-3 m-0 border-0 bd-example m-0 border-0">
@@ -13,7 +13,7 @@
     <!-- barra de navegacion-->
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Barra de navegación</font></font></span>
+        <span class="navbar-brand mb-0 h1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MI WEB DE VOTACIONES</font></font></span>
           
         <!-- enlaces de navegación-->
             <ul class="nav justify-content-end">

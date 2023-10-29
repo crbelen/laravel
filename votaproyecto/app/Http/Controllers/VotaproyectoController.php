@@ -31,19 +31,24 @@ class VotaproyectoController extends Controller
         //
     }
 
-    public function voto(Request $request)
+    public function votar(Request $request)
     {
        $ipAddress = $request->ip();//obtengo la ip del usuario
        
        //Verificamos en nuestra bd si la IP ya ha votado antes
-       $existevoto = Votaproyecto::where('ip_address', $ipAddress)->first();
+       $existevoto = Votaproyecto::where('ip_address', $ipAddress)->first();//cogemos el primer elemento de la tabla que sea true
 
        if ($existevoto) {
         //el usuario ya votó y lo redirigo a mi welcome con mensaje de error
             return redirect()->back()->with('error','Ya has votado anteriormente, gracias!.');
         
         }else {
-            // Registra el voto y la IP en la base de datos
+            // Registra el voto en la tabla, el proyecto votado y la IP en la base de datos
+            $voto = new votaproyecto();
+            $voto->
+            
+            
+            
             Votaproyecto::create([
                 'ip_address' => $ipAddress,
             ]);
