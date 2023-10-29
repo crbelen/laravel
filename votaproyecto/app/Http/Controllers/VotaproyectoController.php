@@ -50,12 +50,6 @@ class VotaproyectoController extends Controller
         
         }else {
             
-            // Proceso de votacion y Registro el voto en la tabla, el proyecto votado y la IP en la base de datos
-           /* $voto = new votaproyecto();
-            $voto->ip_adrres = $ip;
-            $voto->id_proyecto = $id_proyecto;
-            $voto->save();*/
-
             votaproyecto::created([
                 'id_proyecto' => $id_proyecto,
                 'ip_address' => $ip
