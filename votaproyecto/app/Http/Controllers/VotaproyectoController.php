@@ -17,6 +17,23 @@ class VotaproyectoController extends Controller
         //return view('proyecto.welcome');
     }
 
+
+
+    public function votar(Request $request, $proyecto_id)
+{
+    $ip = $request->ip();//obtengo la ip del usuario
+
+    //registro en la tabla votaproyecto el voto y la ip
+    $voto = new votaproyecto();
+    $voto->id_proyecto = $proyecto_id;
+    $voto->ip_address = $ip;
+    $voto->save();
+
+    // mostrar un mensaje de éxito en una ventana emergente.
+    return redirect()->route('proyecto.welcome')->with('success', 'Voto registrado satisfactoriamente.');
+}
+
+
     /**
      * Show the form for creating a new resource.
      */
@@ -33,31 +50,35 @@ class VotaproyectoController extends Controller
         //
     }
 
+    /*FUNCION RESTRINGIENDO POR IP
+    
     public function votar(Request $request, $id_proyecto)
     {
        $ip = $request->ip();//obtengo la ip del usuario
-       $id_proyecto = proyecto::find($id_proyecto);
 
 
        //Verificamos en nuestra bd si la IP ya ha votado antes
        $existevoto = Votaproyecto::where('ip_address', $ip)
-       //->where('id_proyecto', $id_proyecto)
        ->first();//cogemos el primer elemento de la tabla que sea true
 
        if ($existevoto) {
         //el usuario ya votó y lo redirigo a mi welcome con mensaje de error
-            return redirect()->back()->with('error','Ya has votado anteriormente, gracias!.');
+            return redirect()->route('proyecto.welcome')->with('error','Ya has votado anteriormente, gracias!.');
         
         }else {
             
-            votaproyecto::created([
-                'id_proyecto' => $id_proyecto,
-                'ip_address' => $ip
+        $voto = new votaproyecto();
+        $voto->id_proyecto = $proyecto_id;
+        $voto->ip_address = $ip;
+        $voto->save();
             ]);
 
-            return redirect()->back()->with('success', 'Tu voto ha sido registrado para este proyecto, gracias!');
+            //  mensaje de éxito en una ventana emergente.
+            return redirect()->route('proyecto.welcome')->with('success', 'Voto registrado satisfactoriamente.');
         }
     }
+    */
+
 
     /**
      * Display the specified resource.

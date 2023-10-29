@@ -11,9 +11,8 @@ class votaproyecto extends Model
 {
     use HasFactory;
 
-    //protected $fillable = ['ip_address', ];
-
-
+    protected $fillable = ['id_proyecto', ];
+    
     public function proyecto(){
 
         return $this->belongsTo(proyecto::class);

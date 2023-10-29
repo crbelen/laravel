@@ -41,7 +41,9 @@
         
             <div class="row g-6"><!-- espacio entre filas-->
                 <div class="row row-cols-1 row-cols-md-3 g-4"><!--en pantallas medianas y grandes tres columnas en el grid-->
-                    @foreach ($proyectos as $proyecto)<!--iniciamos un bucle que recorre la colección de proyectos-->
+                   
+                    <!--iniciamos un bucle que recorre la colección de proyectos-->
+                    @foreach ($proyectos as $proyecto)
                     <div class="proyecto"><!--creo un contenedor con la clase proyecto-->
                         <div class="col">
                             <div class="card">
