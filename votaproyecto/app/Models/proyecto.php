@@ -10,7 +10,9 @@ class proyecto extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nombre_proyecto',];
+    /*private $id_proyecto; 
+    protected $fillable = ['nombre_proyecto', ];*/
+
 
 
     public function votos(){

@@ -43,7 +43,12 @@
                     <div class="card-body">
                         <h5 class="card-title">Título 1</h5>
                         <p class="card-text">Texto de ejemplo para la cuadrícula.</p>
-                        <a href="#" class="btn btn-primary">Botón 1</a>
+                        <!-- agrego un un formulario que realiza una solicitud POST a la ruta votar y pasa el ID del proyecto como parte de la URL-->
+                        <form action="{{ route('votar', $id_proyecto->id) }}" method="post">
+                            @csrf
+                            <button type="submit">Votar por este proyecto 1</button>
+                        </form>
+                        <!--<a href="#" class="btn btn-primary">Botón 1</a>-->
                     </div>
                 </div>
             </div>

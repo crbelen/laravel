@@ -12,7 +12,11 @@ class ProyectoController extends Controller
      */
     public function index()
     {
-        //
+        //recupero todos los proyectos desde la base de datos y los paso a la vista welcome donde se mostrará la lista de proyectos
+        
+        $proyectos = proyecto::all();//recuperamos todos los proyectos de la base de datos.
+        return view('welcome', compact('proyectos'));//le indicamos la vista que vamos a cargar(welcome) y con compact pasamos la coleccion de proyectos a la vista.
+
     }
 
     /**
