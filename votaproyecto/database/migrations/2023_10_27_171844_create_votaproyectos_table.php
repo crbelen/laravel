@@ -17,7 +17,6 @@ return new class extends Migration
             //agrego columna con la ip
             $table->ipAddress('ip_address');
             //agrego columna que identifica a qué proyecto se ha votado   
-            $table->string('nombre_proyecto');
             $table->unsignedBigInteger('id_proyecto');
             $table->foreign('id_proyecto')->references('id')->on('proyectos');
 
@@ -30,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('proyectos');
+        Schema::dropIfExists('Votaproyectos');
     }
 };

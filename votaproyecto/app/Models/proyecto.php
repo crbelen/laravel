@@ -4,10 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use illuminate\Database\Eloquent\Relations\HasMany;
 
 class proyecto extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['nombre_proyecto',];
+
 
     public function votos(){
 
