@@ -18,7 +18,7 @@ class VotaproyectoController extends Controller
     }
 
 
-
+/*
     public function votar(Request $request, $proyecto_id)
 {
     $ip = $request->ip();//obtengo la ip del usuario
@@ -32,7 +32,7 @@ class VotaproyectoController extends Controller
     // mostrar un mensaje de éxito en una ventana emergente.
     return redirect()->route('proyecto.welcome')->with('success', 'Voto registrado satisfactoriamente.');
 }
-
+*/
 
     /**
      * Show the form for creating a new resource.
@@ -50,9 +50,9 @@ class VotaproyectoController extends Controller
         //
     }
 
-    /*FUNCION RESTRINGIENDO POR IP
-    
-    public function votar(Request $request, $id_proyecto)
+    //FUNCION RESTRINGIENDO POR IP
+
+    public function votar(Request $request, $proyecto_id)
     {
        $ip = $request->ip();//obtengo la ip del usuario
 
@@ -71,13 +71,11 @@ class VotaproyectoController extends Controller
         $voto->id_proyecto = $proyecto_id;
         $voto->ip_address = $ip;
         $voto->save();
-            ]);
 
             //  mensaje de éxito en una ventana emergente.
             return redirect()->route('proyecto.welcome')->with('success', 'Voto registrado satisfactoriamente.');
         }
     }
-    */
 
 
     /**
