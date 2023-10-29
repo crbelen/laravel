@@ -10,8 +10,8 @@ class proyecto extends Model
 {
     use HasFactory;
 
-    /*private $id_proyecto; 
-    protected $fillable = ['nombre_proyecto', ];*/
+   
+    protected $fillable = ['nombre_proyecto', ];
 
 
 

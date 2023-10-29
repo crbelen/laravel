@@ -25,6 +25,8 @@ class ProyectoController extends Controller
     public function create()
     {
         //
+        return view('proyecto');
+
     }
 
     /**
@@ -33,6 +35,13 @@ class ProyectoController extends Controller
     public function store(Request $request)
     {
         //
+        $nombre_proyecto = $request->validate([
+            'nombre_proyecto' => 'required|string',
+        ]);
+    
+        Proyecto::create($nombre_proyecto);
+
+        return redirect()->route('proyecto.welcome')->with('success', 'Proyecto creado exitosamente.');//no aparece el mensaje.
     }
 
     /**

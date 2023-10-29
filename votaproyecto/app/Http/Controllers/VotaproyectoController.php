@@ -14,6 +14,7 @@ class VotaproyectoController extends Controller
     public function index()
     {
         //
+        //return view('proyecto.welcome');
     }
 
     /**
